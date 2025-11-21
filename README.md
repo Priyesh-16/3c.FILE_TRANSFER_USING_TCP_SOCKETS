@@ -8,8 +8,8 @@ To write a python program for creating File Transfer using TCP Sockets Links
 4. Open the file and then send it to the client in byte format.
 5. In the client side receive the file from server and then write the content into it.
 ## PROGRAM
-## client:
-~~~
+## CLIENT
+```
 import socket 
 s = socket.socket() 
 host = socket.gethostname() 
@@ -27,11 +27,11 @@ with open('received_file', 'wb') as f:
 f.close() 
 print('Successfully get the file') 
 s.close() 
-print('connection closed')
-~~~
-
-## server:
-~~~
+print('connection closed') 
+```
+## SERVER
+```
+ 
 import socket                    
 port = 60000                    
 s = socket.socket()              
@@ -53,10 +53,12 @@ while True:
     print('Done sending') 
     conn.send('Thank you for connecting'.encode()) 
     conn.close()
-~~~
-    
+```
 ## OUPUT
-<img width="1918" height="1143" alt="image" src="https://github.com/user-attachments/assets/5ebf8f75-a724-4b44-917b-c0b77c04582b" />
+<img width="1549" height="1155" alt="image" src="https://github.com/user-attachments/assets/4f02b611-92f0-4ea5-bc9e-d9d3c7842da7" />
+
+<img width="1392" height="1134" alt="image" src="https://github.com/user-attachments/assets/1bc616ae-f96f-4ad9-b797-652d4988475d" />
+
 
 ## RESULT
 Thus, the python program for creating File Transfer using TCP Sockets Links was 
